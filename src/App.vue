@@ -1,6 +1,11 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+    import { RouterLink, RouterView } from 'vue-router'
+    import LoginButton from "@/components/buttons/login-button.vue";
+    import LogoutButton from "@/components/buttons/logout-button.vue";
+    import SignUpButton from "@/components/buttons/signup-button.vue";
+    import { useAuth0 } from "@auth0/auth0-vue";
+    import { userAuthStore } from '@/stores/userAuthStore';
+    import { onMounted } from 'vue';
 </script>
 
 <template>
